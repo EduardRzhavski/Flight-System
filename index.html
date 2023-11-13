@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+
+</head>
+<body>
+    
+  <div id="loginForm">
+    <h2>Login Form</h2>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label class="checkbox-label" for="isAdmin">Admin:
+        <input type="checkbox" id="isAdmin">
+      </label>
+
+      <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <div class="admin-options">
+      <button type="button" onclick="addFlight()">Add Flight</button>
+      <button type="button" onclick="searchFlights()">Search Flights</button>
+      <button type="button" onclick="sortFlights()">Sort Flights by Price</button>
+      <button type="button" onclick="updatePrice()">Update Price</button>
+    </div>
+
+    <button type="button" onclick="logout()">Logout</button>
+  </div>
+
+
+
+    
+    <script src="Flight.js"></script>
+    
+</body>
+</html>

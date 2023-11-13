@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css" />
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <h2>Flight Booking System</h2>
+
+    <div class="flight-list" id="flightList">
+      <!-- Flight details will be dynamically added here using JavaScript -->
+    </div>
+  
+    <div class="cart" id="cart">
+      <h3>Shopping Cart</h3>
+      <!-- Cart items will be dynamically added here using JavaScript -->
+      <button class="checkout-button" onclick="checkout()">Checkout</button>
+    </div>
+  
+    <div class="popup" id="popup">
+      <p id="confirmationMessage"></p>
+      <p id="totalAmount"></p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+
+    
+    <script src="Flight2.js"></script>
+
+</body>
+</html>
